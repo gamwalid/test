@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+  }
+  * {
+    font-family: "El Messiri", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+  .hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left, transparent 10%, rgba(0, 0, 0, 4)),
+      url("../img/mainhair.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+  .hero h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+    color: orange;
+  }
+  .hero p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .hero_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .hero_child img {
+    object-fit: cover;
+    filter: drop-shadow(0 5px 10px orange);
+  }
+  .hero_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .under_hero {
+    z-index: calc(99 * 999);
+  }
+  .hero_btn button {
+    width: 250px;
+    padding: 7px;
+    font-weight: bold;
+    background: orange;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 500ms ease-out;
+  }
+  .hero_btn button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .hero_btn h4 {
+    color: white;
+  }
+  .hero_btn h4 span {
+    color: orangered;
+    margin: 0 7px 0 7px;
+  }
+  .title_homepage {
+    position: absolute;
+    z-index: 1;
+    top: 49.5%;
+    left: 61.5%;
+  }
+  .title_homepage h2 {
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    background: transparent;
+    color: red;
+  }
+  ._sub_hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 50%,
+      orange 50%
+    );
+    padding: 20px 0 20px 0;
+  }
+  ._sub_hero button {
+    width: 250px;
+    padding: 7px;
+    font-weight: bold;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.8) 50%,
+      orange 50%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 500ms ease-out;
+  }
+  ._sub_hero button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  ._sub_hero_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  ._sub_hero_child_content {
+    width: 500px;
+  }
+  ._sub_hero_child_content p {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .sec {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .sub_jero_styling {
+    position: relative;
+  }
+  .sub_jero_styling::after {
+    position: absolute;
+    color: orange;
+    left: 50px;
+    top: 50%;
+    font-weight: bold;
+    font-size: 23px;
+    display: block;
+  }
+  .why {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.8) 50%,
+      orange 50%
+    );
+    color: #fff;
+  }
+  .why_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .why_child ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  /*orange orange;*/
+  .why_child ul li::before {
+    content: "\2022";
+    color: orange;
+    font-size: 30px;
+    margin-left: -1em;
+    display: inline-block;
+    width: 2em;
+    top: 1em;
+  }
+  .why button {
+    width: 250px;
+    padding: 7px;
+    font-weight: bold;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 50%,
+      orange 50%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 500ms ease-out;
+  }
+  .why button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .left_side_why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .left_side_why img {
+    object-fit: cover;
+  }
+  .after_before {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+  .after_before p {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+  }
+  .gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 70px;
+  }
+  .gallery img {
+    object-fit: cover;
+  }
+  .image-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .after_before button {
+    width: 250px;
+    padding: 7px;
+    font-weight: bold;
+    background: orange;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 500ms ease-out;
+  }
+  .after_before button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0 20px 0;
+  }
+  .reviews__child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .img_rev {
+    width: 350px;
+    height: 300px;
+  }
+  .each_rev {
+    width: 350px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-weight: bold;
+    padding: 7px;
+    transition: 400ms ease-out;
+  }
+  .each_rev:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .each_rev img {
+    object-fit: cover;
+  }
+  .forum {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(247, 133, 10, 0.4) 50%
+      );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+  }
+  .formu_child {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sec_ijg img {
+    object-fit: contain;
+  }
+  form div {
+    margin-bottom: 20px;
+  }
+  form input {
+    width: 300px;
+    padding: 7px;
+    outline: none;
+    border: none;
+  }
+  .submit_Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .submit_Btn button {
+    width: 250px;
+    background: orange;
+    outline: none;
+    border: none;
+    padding: 7px;
+    color: #fff;
+  }
+  form {
+    padding: 20px 0 0 0;
+  }
+  .handle_form_imgproduc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .sec_ijg {
+    position: absolute;
+    left: 150px;
+    top:48.5%;
+    overflow: hidden;
+  }
+  .bite_hair img {
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 650px) {
+    .hero_child,
+    ._sub_hero_child,
+    .why_child,
+    .reviews__child,
+    .formu_child,
+    .formu_child {
+      width: 100%;
+    }
+    .hero_child {
+      flex-direction: column-reverse;
+    }
+    .hero img {
+      width: 250px;
+    }
+    .hero h1 {
+      font-size: 40px;
+    }
+    .hero_btn {
+      justify-content: center;
+    }
+    ._sub_hero {
+      text-align: center;
+    }
+    ._sub_hero_child {
+      flex-direction: column;
+    }
+    .sec {
+      color: white;
+    }
+    .handle_image_hero{
+      position: relative;
+      left: -5px;
+    }
+    ._sub_hero_child_content {
+      width: 100%;
+    }
+    .why_child {
+      flex-direction: column-reverse;
+    }
+    .adfree img {
+      width: 360px;
+    }
+    .reviews{
+      background:orange;
+    }
+    .reviews h1{
+      color: white;
+    }
+    .lside_secimg img {
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      margin: 0;
+      width: 300px;
+      height: 500px;
+    }
+    ._sub_hero img {
+      width: 100%;
+      height: 100%;
+    }
+    .gallery {
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(1, 300px);
+      grid-gap: 70px;
+    }
+    .reviews__child {
+      flex-direction: column;
+    }
+    .handle_form_imgproduc {
+      display: none;
+    }
+    .forum {
+      height: 100%;
+    }
+    .each_rev {
+      padding: 0px;
+      margin-bottom: 20px;
+    }
+    .title_homepage {
+      display: none;
+    }
+    .sub_jero_styling::after {
+      position: absolute;
+      color: orange;
+      left: 20px;
+      top: 50%;
+      font-weight: bold;
+      font-size: 23px;
+      display: block;
+    }
+    .sub_jero_styling::before {
+      position: absolute;
+      content: "HAIR";
+      color: rgb(255, 255, 255);
+      left: 72%;
+      top: 50%;
+      font-weight: bold;
+      font-size: 23px;
+      display: block;
+    }
+  }
+  

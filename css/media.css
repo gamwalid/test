@@ -1,0 +1,957 @@
+@media (min-width: 992px) {
+  .wrapper {
+    width: 970px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  /* section {
+    overflow: hidden;
+  } */
+
+  .title {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  .header {
+    font-size: 0;
+    background: url(../img/desc/leo-header.png) no-repeat 70% 0%,
+      url(../img/desc/header-bg.jpg) center bottom/cover;
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .header::before {
+    content: "";
+    background: linear-gradient(
+      transparent 0,
+      rgba(26, 4, 5, 0.7) 20%,
+      #1a0405 60%,
+      transparent 100%
+    );
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -127px;
+    pointer-events: none;
+  }
+
+  .header__main {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 16px;
+    padding-right: 70px;
+  }
+
+  .header .table {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-left: 120px;
+    font-size: 16px;
+  }
+
+  .table-container {
+    display: table;
+    width: 100%;
+  }
+  .header .tcell {
+    background: rgba(25, 2, 2, 0.65);
+    display: table-cell;
+  }
+
+  .header .tcell:last-child {
+    display: table-caption;
+  }
+
+  .header .prod-name {
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 30px;
+  }
+
+  .header__subtitle {
+    text-align: center;
+    font-size: 40px;
+    direction: rtl;
+  }
+
+  .header__man {
+    right: -180px;
+    bottom: -70px;
+  }
+
+  .header__prod {
+    max-width: 212px;
+    left: 80px;
+    bottom: -60px;
+  }
+
+  .header__prod img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__prod::before {
+    background: url(../img/desc/header_prod-fire-back.png) no-repeat;
+    bottom: -5px;
+    left: -83px;
+    width: 265px;
+    height: 342px;
+    background-size: contain;
+  }
+
+  .header__prod::after {
+    background: url(../img/desc/header_prod-fire-front.png) no-repeat;
+    background-size: contain;
+    bottom: -5px;
+    right: -47px;
+    width: 265px;
+    height: 342px;
+    z-index: 2;
+  }
+
+  .header__subtitle span {
+    display: inline-block;
+    background: #ffb400;
+    color: #000;
+    padding: 3px 8px;
+    margin-bottom: 7px;
+  }
+
+  .header .title {
+    font-weight: 300;
+    color: #fff;
+    text-align: left;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-top: 70px;
+    margin-left: 30px;
+  }
+
+  .header__advantages-list {
+    padding-left: 70px;
+    margin-bottom: 50px;
+    padding-right: 25px;
+  }
+
+  .header__advantages-item {
+    padding-right: 60px;
+    background: none;
+    margin-bottom: 30px;
+    position: relative;
+    color: #ffb400;
+    margin-bottom: 40px;
+    direction: rtl;
+  }
+
+  .header__advantages-item::before {
+    width: 43px;
+    height: 48px;
+    top: -18px;
+    right: 0;
+    background: url(../img/desc/check.png) no-repeat;
+  }
+
+  .price {
+    margin-bottom: 20px;
+  }
+
+  .price__old {
+    font-size: 30px;
+    text-align: center;
+    padding-right: 10px;
+    color: #9a9892;
+    display: block;
+    width: 100%;
+  }
+
+  .price__new {
+    font-size: 36px;
+    /* padding-left: 10px; */
+    text-align: center;
+    width: 100%;
+  }
+
+  .timer {
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .timer p {
+    color: #9a9892;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    font-size: 28px;
+    font-weight: 300;
+    padding: 17px 15px;
+  }
+  .secret {
+    padding: 50px 0 240px;
+    background: #1a0405 url(../img/desc/men.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .secret .wrapper {
+    padding-left: 330px;
+  }
+  .secret .wrapper::before {
+    content: "";
+    background: url(../img/desc/man.png) no-repeat;
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    width: 333px;
+    height: 759px;
+  }
+
+  .secret .title {
+    direction: rtl;
+    text-align: right;
+    line-height: 1.2;
+    position: relative;
+  }
+
+  .secret .title::before {
+    content: "";
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    width: 120px;
+    height: 135px;
+    top: -30px;
+    left: -40px;
+    position: absolute;
+  }
+
+  .secret .title b {
+    display: block;
+  }
+
+  .secret p {
+    margin-bottom: 25px;
+    text-align: right;
+  }
+
+  .secret p b {
+    font-size: 24px;
+  }
+
+  .secret__leopard {
+    width: 648px;
+    height: 413px;
+    bottom: -385px;
+    left: auto;
+    transform: none;
+    right: -80px;
+    z-index: 2;
+  }
+
+  .secret::before {
+    display: none;
+  }
+
+  .natives {
+    padding-top: 105px;
+    background: #130202 url(../img/desc/natives-bg.png) repeat-x left bottom;
+    position: relative;
+  }
+
+  .natives::before {
+    content: "";
+    background: linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 0.3) 11%,
+      #000 45%,
+      #000 55%,
+      transparent
+    );
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    pointer-events: none;
+  }
+
+  .natives__list {
+    font-size: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .natives__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 5%;
+    font-size: 18px;
+  }
+  .natives__item:last-child {
+    margin-right: 0;
+  }
+  .natives__img {
+    width: 204px;
+    height: 204px;
+    margin-bottom: 60px;
+  }
+  .natives__img::before {
+    left: 52%;
+    background: url(../img/desc/fireball.png) no-repeat;
+    width: 332px;
+    height: 321px;
+  }
+  .natives .title {
+    margin-bottom: 100px;
+    padding: 0 40px;
+    line-height: 1.2;
+  }
+  .about-prod {
+    background: url(../img/desc/about-prod-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    font-size: 24px;
+  }
+  .prod-name {
+    font-size: 58px;
+    text-align: center;
+  }
+  .about-prod .wrapper {
+    padding-left: 330px;
+    text-align: center;
+    direction: rtl;
+  }
+  .about-prod .prod-name {
+    margin-bottom: 15px;
+  }
+  .about-prod__tube {
+    max-width: 308px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+  .about-prod__title {
+    margin-bottom: 50px;
+  }
+  .about-prod__title span {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .about-prod2 {
+    padding-bottom: 90px;
+    direction: rtl;
+    text-align: center;
+  }
+
+  .about-prod2__item {
+    position: relative;
+    text-align: center;
+  }
+
+  .about-prod2__text {
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .prod2__text .title {
+    text-align: center;
+  }
+  .about-prod2__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+
+  .about-prod2__item:first-child {
+    padding-left: 370px;
+  }
+
+  .about-prod2__item:last-child {
+    padding-right: 400px;
+  }
+
+  .about-prod2__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 0;
+  }
+
+  .about-prod2__item:first-child .about-prod2__img {
+    left: 0;
+  }
+
+  .about-prod2__item:last-child .about-prod2__img {
+    right: 0;
+  }
+
+  .about-prod2__item:last-child p {
+    position: relative;
+  }
+
+  .about-prod2__item:last-child p::before {
+    content: "";
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #ffb400;
+    width: 120px;
+    height: 135px;
+    bottom: -60px;
+    left: -41px;
+    position: absolute;
+  }
+
+  .consist {
+    background: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.9)),
+      url(../img/desc/consist-bg.jpg) no-repeat center bottom;
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  .consist::before {
+    top: -30px;
+  }
+
+  .consist .title {
+    margin-bottom: 80px;
+    padding: 0 100px;
+  }
+
+  .consist__img {
+    width: 180px;
+  }
+
+  /*.consist .wrapper::before {
+    content: "";
+    background: url(../img/desc/consist-fur.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -175px;
+    width: 664px;
+    height: 772px;
+  }*/
+
+  .consist .wrapper::after {
+    content: "";
+    background: url(../img/desc/consist-man.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -120px;
+    width: 491px;
+    height: 791px;
+  }
+
+  .consist__list {
+    text-align: left;
+    padding-right: 320px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .consist__item {
+    font-size: 0;
+    margin-bottom: 80px;
+  }
+
+  .consist__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+  }
+
+  .consist__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 130px;
+    text-align: center;
+  }
+
+  .consist__item-caption {
+    font-size: 24px;
+  }
+
+  .consist__img::before {
+    background: radial-gradient(
+      circle,
+      rgba(255, 180, 0, 0.8) -13%,
+      transparent 65%
+    );
+
+    width: 230px;
+    height: 230px;
+  }
+
+  .hyaluronic {
+    font-size: 0;
+    text-align: left;
+    background: #290504 url(../img/desc/natives-bg.png) no-repeat center;
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
+
+  .hyaluronic::before {
+    height: 350px;
+
+    top: -220px;
+    background: linear-gradient(
+      transparent 10%,
+      #2f0205 50%,
+      #2d0302 70%,
+      transparent 100%
+    );
+  }
+
+  .hyaluronic .wrapper::after {
+    content: "";
+    background: radial-gradient(
+      circle,
+      rgba(255, 180, 0, 0.15) 30%,
+      transparent 75%
+    );
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .hyaluronic .title {
+    text-align: left;
+    font-size: 36px;
+    line-height: 1.2;
+    position: relative;
+    padding-right: 110px;
+  }
+
+  .hyaluronic .title::before {
+    content: "";
+    background: url(../img/desc/malecula2.png) no-repeat;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 90px;
+    height: 96px;
+  }
+
+  .hyaluronic__img {
+    max-width: 415px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hyaluronic__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    font-size: 24px;
+    padding-left: 60px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hyaluronic__img::before {
+    background: url(../img/desc/malecula.png) no-repeat;
+    right: -50px;
+    top: -110px;
+    width: 501px;
+    height: 601px;
+  }
+
+  .hyaluronic p {
+    line-height: 1.4;
+  }
+
+  .doc {
+    background: url(../img/desc/doc-bg.jpg) no-repeat center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .doc::before {
+    content: "";
+    background: linear-gradient(
+      transparent 10%,
+      #290504 45%,
+      #290504 61%,
+      transparent 100%
+    );
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    left: 0;
+    top: -370px;
+    pointer-events: none;
+  }
+
+  .doc::after {
+    content: "";
+    background: linear-gradient(
+      transparent,
+      #1a0405 45%,
+      #1a0405 55%,
+      transparent
+    );
+    position: absolute;
+    height: 410px;
+    width: 100%;
+    left: 0;
+    bottom: -200px;
+  }
+
+  .doc .wrapper {
+    padding-right: 370px;
+  }
+
+  .doc .wrapper::before {
+    content: "";
+    background: url(../img/desc/doc.png) no-repeat;
+    position: absolute;
+    right: -70px;
+    top: 0;
+    width: 396px;
+    height: 758px;
+  }
+
+  .doc__img {
+    display: none;
+  }
+
+  .doc__program {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .doc__name {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .doc__job {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .doc__job b {
+    display: inline;
+  }
+
+  .doc__text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .doc__text::before {
+    content: "";
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    border-color: #ffb400;
+    width: 160px;
+    height: 160px;
+    bottom: -50px;
+    left: -50px;
+    position: absolute;
+  }
+
+  .result {
+    padding-top: 60px;
+    background: radial-gradient(
+      ellipse,
+      rgba(155, 5, 19, 0.3) -25%,
+      #1a0405 60%
+    );
+    /*url(../img/desc/result-bg.jpg) no-repeat;*/
+    background-size: cover;
+  }
+
+  .result__notice {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    direction: rtl;
+  }
+
+  .result__list {
+    padding-left: 300px;
+    position: relative;
+    direction: rtl;
+  }
+
+  .result__list .b-product {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+
+  .result__item {
+    font-size: 0;
+    margin-bottom: 0;
+  }
+
+  .result__img {
+    padding-top: 30px;
+    max-width: 340px;
+  }
+
+  .result__img,
+  .result__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+  }
+
+  .result__text {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .result__text b {
+    text-transform: uppercase;
+  }
+
+  .review {
+    padding-top: 130px;
+  }
+
+  .review .title {
+    font-weight: 400;
+  }
+
+  .review .title b {
+    display: block;
+  }
+
+  .review__list {
+    font-size: 0;
+  }
+
+  .review__item {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 5%;
+    min-height: 470px;
+  }
+
+  .review__item:last-child {
+    margin-right: 0;
+  }
+
+  .footer {
+    background: #1a0405;
+    background-position: center;
+    background-size: cover;
+    font-size: 0;
+    padding-top: 70px;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (max-width: 800px) {
+    .coin{
+      display:none;
+    }
+    .footer {
+      background: #1a0405;
+      background-position: center;
+      background-size: cover;
+      font-size: 0;
+      padding-top: 70px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .footer__left,
+  .footer__order {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+  }
+
+  .footer__order {
+    width: 40%;
+    padding: 50px;
+    background-color: rgba(41, 6, 7, 0.6);
+    background: linear-gradient(rgba(41, 6, 7, 0.6) 70%, transparent) 75%;
+  }
+
+  .footer::before {
+    background: linear-gradient(
+      transparent,
+      #2b0607 40%,
+      #2b0607 60%,
+      transparent
+    );
+    height: 650px;
+    top: -300px;
+  }
+
+  .footer__order-title {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .footer__order-sale {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  input,
+  select {
+    margin-bottom: 20px;
+  }
+
+  .footer .order {
+    margin-top: 15px;
+  }
+
+  .footer .timer {
+    margin-top: 25px;
+    padding-left: 0;
+  }
+
+  .footer .table {
+    display: table;
+    width: 100%;
+  }
+
+  .footer .tcell {
+    display: table-cell;
+  }
+
+  .footer .tcell:last-child {
+    display: table-caption;
+  }
+
+  .footer .price {
+    margin-bottom: 0px;
+    direction: rtl;
+  }
+
+  .footer .subtitle {
+    font-size: 40px;
+    text-align: left;
+    background: none;
+    padding: 0;
+    margin-bottom: 70px;
+    direction: rtl;
+  }
+
+  .footer .subtitle span {
+    display: inline-block;
+    background: #ffb400;
+    color: #000;
+    padding: 3px 8px;
+    margin-bottom: 7px;
+  }
+
+  .footer .prod-name {
+    line-height: 0.9;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 80px;
+  }
+
+  .footer__prod {
+    height: 530px;
+    left: -30px;
+  }
+
+  .footer__prod-box {
+    width: 355px;
+    top: 20px;
+    right: 120px;
+  }
+
+  .footer__prod-tube {
+    right: 115px;
+    top: 50px;
+    height: auto;
+    width: 200px;
+  }
+
+  /* .footer__prod::before { */
+  /* background: url(../img/desc/header_prod-fire-back.png) no-repeat; */
+  /* top: -88px; */
+  /* left: 118px; */
+  /* width: 405px; */
+  /* height: 523px; */
+  /* background-size: contain; */
+  /* } */
+
+  /* .footer__prod::after { */
+
+  /* background: url(../img/desc/header_prod-fire-front.png) no-repeat; */
+  /* top: -70px; */
+  /* right: 47px; */
+  /* width: 405px; */
+  /* height: 523px; */
+  /* background-size: contain; */
+  /* } */
+
+  .footer__prod-promise {
+    background: url(../img/desc/spot-red.png) no-repeat;
+    width: 310px;
+    height: 260px;
+    font-size: 20px;
+    padding-top: 80px;
+    top: -80px;
+    line-height: 1;
+    right: -70px;
+    z-index: 3;
+  }
+
+  .footer__prod-promise span {
+    font-size: 24px;
+    position: relative;
+    top: -48px;
+  }
+
+  .footer__prod-promise span b {
+    font-size: 35px;
+  }
+  .rhino-gif {
+    top: 22%;
+    left: 2%;
+  }
+  .header__prod .rhino-gif {
+    top: 25%;
+  }
+  .hyaluronic__img .rhino-gif {
+    top: 29%;
+    left: 3%;
+  }
+  .result__list .rhino-gif {
+    top: 29%;
+    left: 6%;
+  }
+  .footer__prod .b-product {
+    position: relative;
+    margin-left: 160px;
+    text-align: initial;
+  }
+  .footer__prod .b-product .rhino-gif {
+    top: 31%;
+    left: 4%;
+  }
+}
